@@ -159,6 +159,7 @@ button {
     padding: 8px 20px;
     border: 0;
     border-radius: 5px;
+    flex: none;
 }
 
 button.btn-inverted {
