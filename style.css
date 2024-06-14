@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-
+/* @todo: set content width to 800px but dont break backgrounds */
 body {
     margin: 0;
     padding: 0;
@@ -9,13 +9,12 @@ body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .header {
     background-color: #1F2937;
     color: #F9FAF8;
-    padding: 10px 50px;
+    padding: 10px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,6 +31,33 @@ body {
     font-weight: bold;
 }
 
+.hero {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    padding: 50px 100px; 
+    display: flex;
+    gap: 50px;
+    /* align-items: stretch; */
+}
+
+.hero > * {
+    flex: 1;
+}
+
+.hero p {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.column-right {
+    background-color: grey;
+}
+
 ul {
     list-style-type: none;
 }
@@ -40,4 +66,18 @@ li > a {
     margin: 0;
     padding: 0;
     list-style: block;
+}
+
+button {
+    background-color: #3882f6;
+    color: #F9FAF8;
+    font-weight: bold;
+    padding: 8px 20px;
+    border: 0;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
 }
