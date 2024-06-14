@@ -27,7 +27,7 @@ body {
 
 .header {
     padding: 10px 10px;
-    width: 800px;
+    width: 1000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +45,7 @@ body {
 }
 
 .hero {
-    width: 800px;
+    width: 1000px;
     padding: 50px 10px; 
     display: flex;
     justify-content: center;
@@ -122,12 +122,24 @@ body {
 .cta {
     background-color: #3882f6;
     margin: 50px 0px;
-    padding: 25px 50px;
-    width: 800px;
+    padding: 50px 100px;
+    width: 1000px;
     border-radius: 5px;
     color: #e5e7eb;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.cta-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.cta-left > p {
+    margin: 0;
+    font-size: 18px;;
 }
 
 ul {
@@ -154,7 +166,7 @@ button.btn-inverted {
     border: 3px solid #e5e7eb;
 }
 
-h1, h2 {
+h1, h2, h3 {
     margin: 0;
     padding: 0;
 }
@@ -166,5 +178,10 @@ h1 {
 
 h2 {
     font-size: 36px;
+    font-weight: larger;
+}
+
+h3 {
+    font-size: 22px;
     font-weight: larger;
 }
